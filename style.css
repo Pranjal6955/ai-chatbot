@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0; /* Fixed color format */
+    margin: 0;
+}
+
+#chat-container {
+    width: 100%;
+    max-width: 300px;
+    background-color: white;
+    margin: 0 auto;
+    border: 2px solid black; /* Fixed "border2px" */
+}
+
+.chat-history {
+    height: 50%; /* Added unit (e.g., %) */
+    overflow: auto; /* Fixed property from "overflow-scroll" to "overflow" */
+    border-bottom: 1px dotted black;
+}
+
+input#user-input {
+    width: 100%;
+    margin-top: 5px;
+}
