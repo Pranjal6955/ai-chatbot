@@ -6,7 +6,7 @@ We welcome contributions from the community to make this project better! This do
 
 ## Code of Conduct
 
-By participating in this project, you agree to uphold our [Code of Conduct](link-to-code-of-conduct), which ensures a welcoming and inclusive environment for everyone.
+By participating in this project, you agree to uphold our [Code of Conduct](https://github.com/AI-GenZ/ai-chatbot/blob/main/code%20of%20condunct.md), which ensures a welcoming and inclusive environment for everyone.
 
 ---
 
@@ -14,7 +14,7 @@ By participating in this project, you agree to uphold our [Code of Conduct](link
 
 If you encounter a bug, have a feature request, or need clarification, please follow these steps to report an issue:
 
-1. **Search for Existing Issues**: Check the [issue tracker](link-to-issue-tracker) to see if the issue has already been reported.
+1. **Search for Existing Issues**: Check the [issue tracker](https://github.com/AI-GenZ/ai-chatbot/issues) to see if the issue has already been reported.
 2. **Open a New Issue**: If the issue is new, open a detailed issue:
    - **Title**: A concise summary of the issue.
    - **Description**: Include steps to reproduce the issue, expected behavior, and any relevant logs or screenshots.
@@ -26,12 +26,12 @@ If you encounter a bug, have a feature request, or need clarification, please fo
 
 ### 1. Fork the Repository
 
-Visit the [AI Chatbot Repository](link-to-repo) on GitHub and click the **Fork** button to create a copy under your account.
+Visit the [AI Chatbot Repository](https://github.com/AI-GenZ/ai-chatbot.git) on GitHub and click the **Fork** button to create a copy under your account.
 
 ### 2. Clone Your Fork
 
 ```bash
-git clone https://github.com/<your-username>/ai-chatbot.git
+git clone https://github.com/AI-GenZ/ai-chatbot.git
 cd ai-chatbot
 ```
 
@@ -46,7 +46,7 @@ git checkout -b feature-branch-name
 ### 4. Make Your Changes
 
 - Edit relevant files using your preferred code editor.
-- Ensure your changes adhere to the project’s coding standards (see [Style Guidelines](#style-guidelines)).
+- Ensure your changes adhere to the project’s coding standards (see [Style Guidelines](https://github.com/AI-GenZ/ai-chatbot/blob/main/styleguide.md)).
 
 ### 5. Test Your Changes
 
@@ -87,7 +87,7 @@ git push origin feature-branch-name
 
 ## Testing and Style Guidelines
 
-- **Code Formatting**: Ensure code adheres to the [Style Guide](link-to-style-guide).
+- **Code Formatting**: Ensure code adheres to the [Style Guide](https://github.com/AI-GenZ/ai-chatbot/blob/main/styleguide.md).
 - **Testing**:
   - Run all tests locally using the project’s testing framework.
   - Add tests for new features or bug fixes.
