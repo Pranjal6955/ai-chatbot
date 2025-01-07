@@ -118,7 +118,7 @@ We welcome contributions! Please refer to our [Contributing Guide](https://githu
 - Adhere to the project’s coding standards and style guide.
 
 For details, see:
-- [Code of Conduct](https://github.com/MAT1018/ai-chatbot/blob/main/Code%20of%20Conduct.md)
+- [Code of Conduct](https://github.com/AI-GenZ/ai-chatbot/blob/main/Code%20of%20Conduct.md)
 - [Style Guide](https://github.com/MAT1018/ai-chatbot/blob/main/styleguide.md)
 
 ## Reporting Issues
