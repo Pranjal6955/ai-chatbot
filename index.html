@@ -10,10 +10,10 @@
 <body>
     <div id="chat-container">
         <h1>Welcome to ChatBOT</h1>
-        <div class="chat-history"></div>
-        <input type="text" id="user-input" placeholer="Type your message">
-        <button onclick="sendMessage">Send</button>
+        <div id="chat-history"></div>
+        <input type="text" id="user-input" placeholder="Type your message" aria-label="Message input">
+        <button id="send-button" aria-label="Send message">Send</button>
     </div>
+    <script src="app.js" defer></script>
 </body>
-<script src="app.js" defer></script>
 </html>
