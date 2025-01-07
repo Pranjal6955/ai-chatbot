@@ -1,63 +1,99 @@
-##Contributing to AI Chatbot
+# Contributing to AI Chatbot
 
-We welcome contributions from the community to make this project better! Please follow these steps to contribute:
+We welcome contributions from the community to make this project better! This document outlines the guidelines for contributing, ensuring a smooth and collaborative development process.
 
-Contribution Workflow
+---
 
-Fork the Repository
+## Code of Conduct
 
-Visit the AI Chatbot Repository on GitHub.
+By participating in this project, you agree to uphold our [Code of Conduct](link-to-code-of-conduct), which ensures a welcoming and inclusive environment for everyone.
 
-Click the Fork button in the top-right corner to create your copy of the repository.
+---
 
-Clone Your Fork
+## Reporting Issues
 
+If you encounter a bug, have a feature request, or need clarification, please follow these steps to report an issue:
+
+1. **Search for Existing Issues**: Check the [issue tracker](link-to-issue-tracker) to see if the issue has already been reported.
+2. **Open a New Issue**: If the issue is new, open a detailed issue:
+   - **Title**: A concise summary of the issue.
+   - **Description**: Include steps to reproduce the issue, expected behavior, and any relevant logs or screenshots.
+3. **Label the Issue**: Use appropriate labels such as `bug`, `enhancement`, or `question`.
+
+---
+
+## Contribution Workflow
+
+### 1. Fork the Repository
+
+Visit the [AI Chatbot Repository](link-to-repo) on GitHub and click the **Fork** button to create a copy under your account.
+
+### 2. Clone Your Fork
+
+```bash
 git clone https://github.com/<your-username>/ai-chatbot.git
 cd ai-chatbot
+```
 
-Create a New Branch
+### 3. Create a New Branch
 
 Always create a new branch for your changes:
 
+```bash
 git checkout -b feature-branch-name
+```
 
-Make Your Changes
+### 4. Make Your Changes
 
-Edit the relevant files in your preferred code editor.
+- Edit relevant files using your preferred code editor.
+- Ensure your changes adhere to the project’s coding standards (see [Style Guidelines](#style-guidelines)).
 
-Ensure your changes adhere to the project’s coding standards.
+### 5. Test Your Changes
 
-Test Your Changes
+- Run the backend server and open the frontend to verify your changes work as expected.
+- Write tests for new functionality and ensure all existing tests pass.
 
-Run the backend server and open the frontend to verify your changes work as expected.
+### 6. Commit Your Changes
 
-Commit Your Changes
+Add and commit your changes with a meaningful commit message:
 
-Add and commit your changes with a meaningful message:
-
+```bash
 git add .
-git commit -m "Add detailed description of your changes"
+git commit -m "[Type] Brief description of changes"
+```
 
-Push to Your Fork
+**Example Commit Messages:**
 
+- `[Feature] Add chatbot response caching`
+- `[Fix] Correct typo in user input validation`
+- `[Docs] Update README with setup instructions`
+
+### 7. Push to Your Fork
+
+```bash
 git push origin feature-branch-name
+```
 
-Open a Pull Request (PR)
+### 8. Open a Pull Request (PR)
 
-Go to the original repository on GitHub.
+1. Go to the original repository on GitHub.
+2. Click the **Pull Request** tab, then **New Pull Request**.
+3. Select your branch and provide:
+   - **Title**: A concise summary of the changes.
+   - **Description**: A detailed explanation of the changes and any related issues.
+4. Request a review from maintainers.
 
-Click the Pull Request tab and then click New Pull Request.
+---
 
-Choose your branch from your forked repository and provide a descriptive title and explanation for your PR.
+## Testing and Style Guidelines
 
-Guidelines
+- **Code Formatting**: Ensure code adheres to the [Style Guide](link-to-style-guide).
+- **Testing**:
+  - Run all tests locally using the project’s testing framework.
+  - Add tests for new features or bug fixes.
+- **Documentation**: Update or add documentation as necessary.
 
-Keep pull requests focused and concise.
+---
 
-Update documentation if your changes affect any part of the project setup or usage.
+We appreciate your effort and look forward to your contributions! Thank you for helping us improve the AI Chatbot project.
 
-Ensure your changes do not break existing functionality.
-
-Be respectful and collaborative in your discussions and reviews.
-
-We appreciate your effort in contributing to the AI Chatbot project!
