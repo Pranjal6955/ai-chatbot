@@ -4,26 +4,27 @@
 
 ## Introduction
 
-The **AI Chatbot** is a simple web-based application that leverages AI to interact with users. This chatbot can process natural language input and generate meaningful responses, offering an engaging user experience. This project demonstrates the integration of **front-end** and **back-end** technologies, specifically combining **HTML, CSS, JavaScript** for the user interface, and **Python with Flask** for the backend services.
+The **AI Chatbot** is a simple web-based application that leverages AI to interact with users. This chatbot processes natural language input and generates meaningful responses, offering an engaging user experience. The project integrates **front-end** and **back-end** technologies, combining **HTML, CSS, JavaScript** for the user interface and **Python with Flask** for backend services.
 
 ## Features
 
-- **Interactive Chat Interface**: A clean and intuitive user interface for seamless communication with the chatbot.
-- **Dynamic Responses**: The chatbot generates real-time AI-powered responses based on user input.
-- **Customizable Backend**: Built with Flask, you can easily modify the backend to adjust the AI model or logic used for generating responses.
-- **Cross-platform Compatibility**: Works on any modern browser (Chrome, Firefox, Edge, etc.).
+- **Interactive Chat Interface**: A clean, intuitive user interface for seamless communication with the chatbot.
+- **Dynamic AI-Powered Responses**: Generates real-time responses based on user input.
+- **Customizable Backend**: Built with Flask, allowing easy modification of the AI model or response logic.
+- **Cross-platform Compatibility**: Works on modern browsers like Chrome, Firefox, and Edge.
+- **Open Source**: Community contributions are encouraged to expand and improve the project.
 
 ## Technology Stack
 
-- **Frontend**: 
-  - **HTML** for the structure of the page
-  - **CSS** for styling
-  - **JavaScript** for dynamic interactions with the chatbot
+- **Frontend**:
+  - **HTML**: Structure of the application.
+  - **CSS**: Styling and design.
+  - **JavaScript**: Dynamic interactions and logic.
 
-- **Backend**: 
-  - **Python** (Flask) to handle API requests and integrate with the AI model
+- **Backend**:
+  - **Python** (Flask): API handling and AI model integration.
 
-- **Optional**: Node.js (for other future features like additional integrations, live data, etc.)
+- **Optional**: Node.js (for potential future features, such as real-time updates or external integrations).
 
 ## Getting Started
 
@@ -31,12 +32,12 @@ Follow these steps to set up and use the AI Chatbot locally.
 
 ### Prerequisites
 
-Make sure you have the following installed:
+Ensure the following are installed:
 
 - **Python 3.8+**
-- **Node.js** (optional, if you plan on adding more JavaScript functionality)
+- **Node.js** (optional for advanced features)
 - A modern **web browser** (e.g., Chrome, Firefox, Edge)
-  
+
 ### Installation
 
 #### Clone the Repository
@@ -48,106 +49,105 @@ git clone https://github.com/AI-GenZ/ai-chatbot.git
 cd ai-chatbot
 ```
 
-#### Setup the Backend
+### Setup on Linux and macOS
 
-1. Ensure the Python backend file (`server.py`) is located in the root directory of the project.
+#### Backend Setup
 
-2. Install the required Python dependencies:
-
-   ```bash
-   pip install flask flask-cors
-   ```
-
-3. Start the backend server:
+1. Open a terminal and navigate to the project directory:
 
    ```bash
-   python server.py
+   cd ai-chatbot
    ```
 
-   The server will start running locally on `http://localhost:5000`.
+2. Create a virtual environment:
 
-#### Setup the Frontend
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+3. Install the required Python dependencies:
+
+   ```bash
+   pip3 install flask flask-cors
+   ```
+
+4. Start the backend server:
+
+   ```bash
+   python3 server.py
+   ```
+
+   The server will start locally on `http://localhost:5000`.
+
+#### Frontend Setup
 
 1. Open the **`index.html`** file in your preferred web browser.
+2. This launches the chatbot interface, which communicates with the backend to generate AI-powered responses.
 
-2. This will launch the chatbot interface. The frontend communicates with the backend to generate AI-powered responses.
+### Setup on Windows
 
-## How to Use
+Follow the same steps as above, but use the following commands where applicable:
 
-1. Open the **`index.html`** file in your web browser by double-clicking it (or opening it via your preferred editor).
-2. In the input box, type a message or question and press **Send**.
-3. The chatbot will process your input and display its response below the message input box.
-4. Continue the conversation by typing in the input box again.
+- For creating a virtual environment:
+
+  ```bash
+  python -m venv venv
+  venv\Scripts\activate
+  ```
+
+- Start the backend server:
+
+  ```bash
+  python server.py
+  ```
+
+## Usage
+
+1. Launch the frontend by opening the **`index.html`** file in your browser.
+2. Type a message or question into the input box and press **Send**.
+3. The chatbot will process your input and display its response in the chat interface.
+4. Continue the conversation by entering more messages.
+
+## Contribution Guidelines
+
+We welcome contributions! Please refer to our [Contributing Guide](https://github.com/AI-GenZ/ai-chatbot/blob/main/CONTRIBUTING.md) for detailed instructions on how to:
+
+- Fork the repository and set up your local environment.
+- Submit high-quality pull requests.
+- Adhere to the project’s coding standards and style guide.
+
+For details, see:
+- [Code of Conduct](https://github.com/MAT1018/ai-chatbot/blob/main/Code%20of%20Conduct.md)
+- [Style Guide](https://github.com/MAT1018/ai-chatbot/blob/main/styleguide.md)
+
+## Reporting Issues
+
+If you encounter any bugs or have feature requests, please submit an issue via the [GitHub Issue Tracker](https://github.com/AI-GenZ/ai-chatbot/issues).
+
+## Testing
+
+To ensure the chatbot works as expected:
+
+1. Run the backend server and open the frontend in your browser.
+2. Input sample messages and verify appropriate responses.
+3. Check the browser console and backend logs for errors.
+
+## Roadmap
+
+Planned features include:
+
+- Integration with a database for storing user interactions.
+- Real-time chat updates using WebSocket.
+- Multi-language support.
 
 ## License
 
-This project is licensed under the **Apache License 2.0**.
-
-## Contributing to AI Chatbot
-
-We welcome contributions from the community! Whether it's fixing bugs, adding features, or improving documentation, we encourage you to contribute. Please follow these steps to contribute:
-
-### Contribution Workflow
-
-#### 1. Fork the Repository
-
-- Visit the [AI Chatbot GitHub Repository](https://github.com/AI-GenZ/ai-chatbot).
-- Click the **Fork** button in the top-right corner to create your copy of the repository.
-
-#### 2. Clone Your Fork
-
-Clone your forked repository to your local machine:
-
-```bash
-git clone https://github.com/<your-username>/ai-chatbot.git
-cd ai-chatbot
-```
-
-#### 3. Create a New Branch
-
-For any new feature or bug fix, create a separate branch:
-
-```bash
-git checkout -b feature-branch-name
-```
-
-#### 4. Make Your Changes
-
-Edit the relevant files using your preferred code editor. Ensure your changes follow the project’s coding standards and best practices.
-
-#### 5. Test Your Changes
-
-Make sure to run the backend server and open the frontend to verify your changes work as expected.
-
-#### 6. Commit Your Changes
-
-After testing, commit your changes with a meaningful commit message:
-
-```bash
-git add .
-git commit -m "Add detailed description of your changes"
-```
-
-#### 7. Push to Your Fork
-
-Push the changes to your forked repository:
-
-```bash
-git push origin feature-branch-name
-```
-
-#### 8. Open a Pull Request (PR)
-
-- Go to the original repository on GitHub.
-- Click the **Pull Request** tab and then click **New Pull Request**.
-- Choose your branch from your forked repository and provide a descriptive title and explanation for your PR.
-
-Once your pull request is reviewed and approved, it will be merged into the main repository.
+This project is licensed under the **Apache License 2.0**. For details, see the [LICENSE](https://github.com/AI-GenZ/ai-chatbot/blob/main/LICENSE) file.
 
 ## Acknowledgments
 
-We would like to thank all contributors and the open-source community for their ongoing support in making this project better. Special thanks to the developers of **Flask**, **HTML**, **CSS**, and **JavaScript** for providing the building blocks of the application.
+We extend our gratitude to the open-source community and all contributors who have supported this project. Special thanks to the developers of **Flask**, **HTML**, **CSS**, **JavaScript**, and other essential tools that make this project possible.
 
 ---
 
-This enhanced version of the README includes clearer instructions for installation, usage, and contribution. It also provides additional sections such as acknowledgments and more detailed contribution instructions, which should make the project easier to understand and contribute to.
