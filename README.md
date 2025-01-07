@@ -55,7 +55,7 @@ cd ai-chatbot
 2. Install the required Python dependencies:
 
    ```bash
-   pip install flask
+   pip install flask flask-cors
    ```
 
 3. Start the backend server:
