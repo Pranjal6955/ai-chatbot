@@ -8,11 +8,33 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
+    // Function to dynamically adjust the chat layout based on screen size
+    const adjustLayout = () => {
+        const windowWidth = window.innerWidth;
+        const windowHeight = window.innerHeight;
+
+        // Adjust chat history height dynamically
+        chatHistory.style.height = `${windowHeight * 0.7}px`;
+        chatHistory.style.overflowY = "auto";
+
+        // Adjust input field width for smaller screens
+        if (windowWidth < 600) {
+            inputField.style.width = "80%";
+            sendButton.style.width = "18%";
+        } else {
+            inputField.style.width = "90%";
+            sendButton.style.width = "8%";
+        }
+    };
+
+    adjustLayout();
+    window.addEventListener("resize", adjustLayout);
+
     const sendMessage = () => {
         const userMessage = inputField.value.trim();
-        
+
         if (userMessage === "") {
-            console.warn("Empty message: Please type something.");
+            alert("Please type a message before sending.");
             return;
         }
 
@@ -22,6 +44,9 @@ document.addEventListener("DOMContentLoaded", () => {
         messageElement.classList.add("user-message");
         chatHistory.append(messageElement);
 
+        // Scroll to the bottom of the chat history
+        chatHistory.scrollTop = chatHistory.scrollHeight;
+
         // Send the user's message to the backend (Flask API)
         fetch("http://localhost:5000/chat", {
             method: "POST",
@@ -30,29 +55,28 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             body: JSON.stringify({ msg: userMessage }),
         })
-        .then((res) => res.json())
-        .then((data) => {
-            const botMessage = document.createElement("div");
-            botMessage.textContent = "Bot: " + (data.reply || "No reply received");
-            botMessage.classList.add("bot-message");
-            chatHistory.append(botMessage);
-        })
-        .catch((err) => {
-            const errorMessage = document.createElement("div");
-            errorMessage.textContent = "Error: Unable to connect to the server.";
-            errorMessage.classList.add("error-message");
-            chatHistory.append(errorMessage);
-            console.error(err);
-        });
+            .then((res) => res.json())
+            .then((data) => {
+                const botMessage = document.createElement("div");
+                botMessage.textContent = "Bot: " + (data.reply || "No reply received");
+                botMessage.classList.add("bot-message");
+                chatHistory.append(botMessage);
 
-        // Clear the input field after sending
+                chatHistory.scrollTop = chatHistory.scrollHeight;
+            })
+            .catch((err) => {
+                const errorMessage = document.createElement("div");
+                errorMessage.textContent = "Error: Unable to connect to the server.";
+                errorMessage.classList.add("error-message");
+                chatHistory.append(errorMessage);
+                console.error(err);
+            });
+
         inputField.value = "";
     };
 
-    // Event listener for the send button
     sendButton.addEventListener("click", sendMessage);
 
-    // Optional: Add event listener for pressing Enter key to send the message
     inputField.addEventListener("keypress", (e) => {
         if (e.key === "Enter") {
             sendMessage();
