@@ -16,5 +16,8 @@
     "url": "https://github.com/Va16hav07/ai-chatbot/issues"
   },
   "homepage": "https://github.com/Va16hav07/ai-chatbot#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "firebase": "^11.1.0"
+  }
 }
